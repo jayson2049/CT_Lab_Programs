@@ -1,0 +1,5 @@
+set file [open "myoutput.dat" w]
+for {set x 0} {$x <= 10} {incr x} {
+puts $file [ expr -3 * $x ]
+}
+close $file
